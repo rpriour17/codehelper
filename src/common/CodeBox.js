@@ -1,6 +1,8 @@
 import React from 'react';
 import CodeEditor from '@uiw/react-textarea-code-editor';
 
+
+
 function CodeBox() {
   const [code, setCode] = React.useState(
     `function add(a, b) {\n  return a + b;\n}`
@@ -8,8 +10,8 @@ function CodeBox() {
   return (
     <CodeEditor
       value={code}
-      language="js"
-      placeholder="Please enter JS code."
+      language="py"
+      placeholder="Please enter Python code."
       onChange={(evn) => setCode(evn.target.value)}
       padding={15}
       style={{
